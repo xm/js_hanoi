@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.title, .message, .error {
+  text-align: center;
+}
+
+.title {
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.error {
+  color: red;
+}
+
+.hanoi {
+  margin: 0 auto;
+  display: table;
+  border-collapse: separate;
+}
+
+.tower {
+  height: 100%;
+  border-bottom: 1px solid black;
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.tower:hover {
+  background: rgba(0, 0, 0, 0.1); 
+}
+
+.selected > .disc:first-child {
+  background: rgba(255, 127, 127, 1);
+}
+
+.disc {
+  margin: 0 auto;
+  background: black;
+}

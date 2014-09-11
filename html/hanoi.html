@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Towers of Hanoi</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/hanoi.css">
+
+    <script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="../js/hanoi-core.js"></script>
+    <script type="text/javascript" src="../js/hanoi-view.js"></script>
+  </head>
+
+  <body>
+    <h2 class="title">Towers of Hanoi</h2>
+    <div class="hanoi"></div>
+    <h3 class="message"></h3>
+    <h3 class="error"></h3>
+
+    <script>
+      (function () {
+        var game = new Hanoi.Game(10);
+        var UI = new Hanoi.UI(game, $("div.hanoi"));
+        UI.play();
+      })();
+    </script>
+ </body>
+</html>
